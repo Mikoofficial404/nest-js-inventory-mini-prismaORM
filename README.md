@@ -74,6 +74,15 @@ Kalau kamu mau jalankan native di laptop:
 
 ---
 
+## 📖 Dokumentasi API (Swagger)
+
+Dokumentasi lengkap dan interaktif (Testing API langsung) bisa diakses di:
+👉 **[http://localhost:3000/api](http://localhost:3000/api)**
+
+*(Pastikan server sudah berjalan!)*
+
+---
+
 ## 📚 Fitur Utama & API Cheatsheet
 
 Berikut beberapa endpoint yang bisa kamu coba di Postman:
@@ -99,7 +108,15 @@ Berikut beberapa endpoint yang bisa kamu coba di Postman:
     *   Header: `Authorization: Bearer <token>`
     *   *Langsung download file PDF rapi berisi list stok barang.*
 
-### 4. Transactions
+### 4. Products
+*   **Lihat Semua Produk**: `GET /products`
+*   **Lihat Produk Low Stock**: `GET /products/alerts/low-stock`
+*   **Detail Produk**: `GET /products/:id`
+*   **Tambah Produk**: `POST /products` (Form-Data: name, price, stock, categoryId, image)
+*   **Update Produk**: `PATCH /products/:id`
+*   **Hapus Produk**: `DELETE /products/:id`
+
+### 5. Transactions
 *   **Barang Masuk/Keluar**: `POST /stock-transactions`
     *   Body:
         ```json
