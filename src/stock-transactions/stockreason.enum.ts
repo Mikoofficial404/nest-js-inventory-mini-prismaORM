@@ -1,0 +1,13 @@
+export enum StockReason {
+  RESTOCK = 'RESTOCK',
+  SALE = 'SALE',
+  OTHER = 'OTHER',
+  TRANSFER = 'TRANSFER',
+  STOCK_OPNAME = 'STOCK_OPNAME',
+  LOST = 'LOST',
+  EXPIRED = 'EXPIRED',
+  DAMAGED = 'DAMAGED',
+  RETURN_IN = 'RETURN_IN',
+  RETURN_OUT = 'RETURN_OUT',
+}
+
